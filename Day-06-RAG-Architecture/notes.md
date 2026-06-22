@@ -57,6 +57,8 @@ The LLM uses the retrieved context to generate the final answer.
 
 # Phase 1: Indexing Phase
 
+```text
+
 One-time process.
 
 Flow:
@@ -73,7 +75,7 @@ FAISS
 
 Output:
 Vector Database Ready
-
+```
 ---
 
 ## Step 1: Document Loader
@@ -99,6 +101,8 @@ Benefits:
 
 ## Step 3: Embeddings
 
+``` text
+
 Convert chunks into vectors.
 
 Example:
@@ -107,6 +111,7 @@ Example:
 ↓
 [0.23, 0.54, 0.81, ...]
 
+```
 ---
 
 ## Step 4: FAISS
@@ -116,6 +121,8 @@ Stores embeddings and enables fast similarity search.
 ---
 
 # Phase 2: Retrieval and Generation
+
+```text
 
 Runs for every user query.
 
@@ -133,9 +140,12 @@ LLM
 ↓
 Answer
 
+```
 ---
 
 ## Query Embedding
+
+```text
 
 User question is converted into vector form.
 
@@ -145,6 +155,7 @@ Example:
 ↓
 Embedding Vector
 
+```
 ---
 
 ## Retrieval
@@ -189,6 +200,8 @@ Explains and generates answers from retrieved information.
 
 # Complete RAG Pipeline
 
+```text
+
 Document
 ↓
 Loader
@@ -204,6 +217,8 @@ Retriever
 LLM
 ↓
 Answer
+
+```
 
 ---
 
