@@ -11,7 +11,7 @@ Understand how LangChain simplifies RAG application development by connecting mu
 ### 🔹 LangChain
 Framework used to build LLM applications using reusable components.
 
-### 🔹 PromptTemplate
+### 🔹 Prompt Template
 Reusable prompt structure with placeholders such as `{context}` and `{question}`.
 
 ### 🔹 Retriever
@@ -33,6 +33,8 @@ Converts raw LLM output into a structured format.
 ---
 ## 🔹 Manual RAG vs LangChain RAG
 
+### Manual RAG
+
 ```text
 Load PDF
 ↓
@@ -50,6 +52,7 @@ Answer
 
 ```
 ---
+### LangChain RAG
 
 ``` text
 Components
@@ -98,6 +101,3 @@ Answer
 
 ---
 
----
- n
-```
